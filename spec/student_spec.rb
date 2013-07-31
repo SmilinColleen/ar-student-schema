@@ -1,4 +1,4 @@
-require 'rspec'
+lrequire 'rspec'
 require 'date'
 require_relative '../app/models/student'
 
