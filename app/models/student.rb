@@ -6,9 +6,7 @@ class Student < ActiveRecord::Base
     message: "not a valid email" }
   validates :email, uniqueness: true
   validates :age, numericality: { greater_than: 5 }
-  # validates :phone, length: {minimum: 10}
   validates :phone_digits, length: {minimum: 10}
-  # validates :phone, format: { with: /(\d|\d.){10,}/}
 
   def name
     "#{first_name} #{last_name}"
